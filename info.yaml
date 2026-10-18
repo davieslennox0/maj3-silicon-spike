@@ -1,9 +1,9 @@
 # Tiny Tapeout project information
 project:
-  title:        "MAJ3 silicon spike"      # Project title
+  title:        "LATCH1 silicon spike"      # Project title
   author:       "davieslennox0"      # Your name
   discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  "NAND-decomposed 3-input majority gate, feasibility spike for a TAP-02-netlist-to-silicon bridge"      # One line description of what your project does
+  description:  "1-bit gated D-latch (TAP-02 LATCH semantics), feasibility spike for a TAP-02-netlist-to-silicon bridge"      # One line description of what your project does
   language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
   clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
 
@@ -11,7 +11,7 @@ project:
   tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
 
   # Your top module name must start with "tt_um_". Make it unique by including your github username:
-  top_module:  "tt_um_davieslennox0_maj3"
+  top_module:  "tt_um_davieslennox0_latch1"
 
   # List your project's source files here.
   # Source files must be in ./src and you must list each source file separately, one per line.
