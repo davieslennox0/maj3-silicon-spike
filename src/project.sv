@@ -12,7 +12,7 @@ module tt_um_davieslennox0_latch1 (
   wire d = ui_in[0];
   wire en = ui_in[1];
   reg q;
-  always @(*) begin
+  always_latch begin
     if (en) q = d;
   end
   assign uo_out = {7'b0, q};
