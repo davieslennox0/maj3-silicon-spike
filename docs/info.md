@@ -1,20 +1,19 @@
 <!---
-
-This file is used to generate your project datasheet. Please fill in the information below and delete any unused
-sections.
-
-You can also include images in this folder and reference them in the markdown. Each image must be less than
-512 kb in size, and the combined size of all images must be less than 1 MB.
+Datasheet source for the Tiny Tapeout flow.
 -->
 
 ## How it works
 
-Explain how your project works
+The design is a purely combinational NAND network (34 synthesized cells) for FabX task GC-012, a 4-to-2 one-hot encoder with error detector. Inputs `ui[3:0]` are `in0..in3`; outputs `uo[3:0]` are `out0..out3`; all other pins are unused and tied low. The netlist comes from Forgeout's optimizer and was re-checked against the task's published test vectors.
 
 ## How to test
 
-Explain how to use your project
+Apply a value on `ui[3:0]` and read `uo[3:0]`. The 16 input/output pairs are listed in `test/test.py`; for example input 0b0001 gives output 0b0100 and input 0b1000 gives 0b0111. Run the RTL test with `cd test && make` (needs cocotb and Icarus Verilog).
 
 ## External hardware
 
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+None.
+
+## Status
+
+Tapeout-ready export. We have not ordered fabrication. Ordering is a separate paid step that the circuit owner completes on Tiny Tapeout. We do not claim a physical chip exists.
